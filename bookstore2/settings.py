@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-)s-y=0rf1mf@ar#h^%$0dhk_&(@31%5s0a^9$_!r!g=xypqf2g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']#API'yi herhangi bir ana makineden erişilebilir hale getirir.
 
 
 # Application definition
@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'books.apps.BooksConfig',#migration için
-   # 'rest_framework'#Django projesinde rest_framework uygulamasını kullanabilmek için
+    'rest_framework',#Django projesinde rest_framework uygulamasını kullanabilmek için
+    'books.apps.BooksConfig',
+
 ]
 
 MIDDLEWARE = [
